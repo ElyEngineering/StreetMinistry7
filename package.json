@@ -1,0 +1,8 @@
+{
+  "name": "street-ministry-7",
+  "private": true,
+  "scripts": {
+    "prebuild": "node scripts/check-required-files.mjs",
+    "build": "python3 scripts/build-images.py"
+  }
+}
