@@ -1,0 +1,6 @@
+Street Ministry 7 — Pastor Jayson Van Beek
+Preview: https://preferred-more-ltd-binding.trycloudflare.com
+Local:   http://127.0.0.1:4180 (serving dist/)
+Server PID: 873897 (python http.server 4180)
+Tunnel PID: 877016 (cloudflared quick tunnel, http2)
+Teardown: ./TEARDOWN.sh
