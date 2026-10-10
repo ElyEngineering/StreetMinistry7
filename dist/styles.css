@@ -38,18 +38,17 @@ p{margin:0 0 1em}
 .safety__inner{display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:.5rem 0}
 .safety p{margin:0}
 .safety a{color:var(--white);font-weight:600}
-.exit{flex:none;font:600 .8rem var(--sans);background:var(--white);color:var(--ink);border:0;border-radius:999px;padding:.45rem 1rem;cursor:pointer}
-.exit:hover{background:var(--gray-200)}
+@media (max-width:480px){.safety{font-size:.75rem;line-height:1.45}}
 
 /* nav */
 .nav{position:sticky;top:0;z-index:50;transition:background .4s,box-shadow .4s,backdrop-filter .4s;color:var(--white);margin-bottom:-76px}
 .nav.is-solid{background:rgba(7,11,22,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(255,255,255,.06)}
 .nav__inner{display:flex;align-items:center;justify-content:space-between;height:76px}
-.brand{display:flex;align-items:center;gap:.75rem;color:var(--white);text-decoration:none}
+.brand{display:flex;align-items:center;gap:.75rem;color:var(--white);text-decoration:none;min-width:0}
 .brand:hover{color:var(--white)}
-.brand__mark{display:grid;place-items:center;width:42px;height:42px;border:1.5px solid rgba(255,255,255,.6);border-radius:50%;font:600 1.4rem var(--serif)}
-.brand__name{font:600 1.35rem/1 var(--serif);display:flex;flex-direction:column}
-.brand__sub{font:500 .68rem/1.6 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gray-300);margin-top:.25rem}
+.brand__mark{display:grid;place-items:center;flex:none;width:50px;height:50px;border:1.5px solid rgba(255,255,255,.6);border-radius:50%;font:600 1.65rem var(--serif)}
+.brand__name{font:600 1.6rem/1.05 var(--serif);display:flex;flex-direction:column;min-width:0;white-space:nowrap}
+.brand__sub{font:500 .78rem/1.35 var(--sans);letter-spacing:.15em;text-transform:uppercase;color:var(--gray-300);margin-top:.2rem;white-space:nowrap}
 .nav__links{display:flex;gap:1.6rem;list-style:none;margin:0;padding:0;align-items:center}
 .nav__links a{color:var(--gray-200);text-decoration:none;font-size:.9rem;font-weight:500}
 .nav__links a:hover{color:var(--white)}
@@ -59,7 +58,11 @@ p{margin:0 0 1em}
 .nav__toggle span[aria-hidden]{top:21px}
 .nav__toggle span[aria-hidden]::before{left:0;top:-7px}.nav__toggle span[aria-hidden]::after{left:0;top:7px}
 @media (max-width:960px){
-  .nav__toggle{display:block}
+  .nav__toggle{display:block;margin-left:auto}
+  .brand{gap:.55rem}
+  .brand__mark{width:50px;height:50px;font-size:1.7rem}
+  .brand__name{font-size:1.68rem}
+  .brand__sub{font-size:.7rem;letter-spacing:.1em}
   .nav__links{position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:0;background:rgba(7,11,22,.97);padding:.5rem 1.25rem 1.25rem;transform:translateY(-8px);opacity:0;visibility:hidden;transition:.3s var(--ease)}
   .nav__links li{width:100%}.nav__links a{display:block;padding:.85rem 0;font-size:1.05rem;border-bottom:1px solid rgba(255,255,255,.08)}
   .nav__cta{border:0!important}

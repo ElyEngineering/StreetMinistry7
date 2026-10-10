@@ -1,8 +1,4 @@
 (function () {
-  var exit = function () { window.location.replace('https://www.google.com/search?q=weather'); };
-  document.getElementById('quick-exit').addEventListener('click', exit);
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && e.shiftKey) exit(); });
-
   var nav = document.getElementById('nav');
   var toggle = nav.querySelector('.nav__toggle');
   toggle.addEventListener('click', function () {
