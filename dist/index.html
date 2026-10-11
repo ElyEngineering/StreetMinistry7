@@ -15,7 +15,7 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/Cormorant.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="assets/img/duluth-lift-bridge-1600.webp" imagesrcset="assets/img/duluth-lift-bridge-800.webp 800w, assets/img/duluth-lift-bridge-1600.webp 1600w" imagesizes="(max-width: 900px) calc(100vw - 4.5rem), 42rem">
+<link rel="preload" as="image" href="assets/img/duluth-lift-bridge-1600.webp" imagesrcset="assets/img/duluth-lift-bridge-800.webp 800w, assets/img/duluth-lift-bridge-1600.webp 1600w" imagesizes="(max-width: 800px) 92vw, 56vw">
 <link rel="stylesheet" href="styles.css">
 <script>document.documentElement.classList.remove("no-js")</script>
 </head>
@@ -25,7 +25,7 @@
 <header class="nav" id="nav">
   <div class="wrap nav__inner">
     <a class="brand" href="#top" aria-label="Street Ministry 7, back to top">
-      <span class="brand__mark" aria-hidden="true"><span class="brand__seven">7</span><svg class="brand__bridge" viewBox="0 0 48 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 14V5h5v9M42 14V5h5v9" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M1 5h46M6 9.5h36" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+      <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 132 72" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M9 22 20 5l11 17" stroke-width="2.5"/><path d="M11.5 22v36M28.5 22v36" stroke-width="2.6"/><path d="M11.5 31h17M11.5 44h17" stroke-width="1.9"/><path d="M11.5 26 28.5 42M28.5 26 11.5 42" stroke-width="1.9"/><path d="M103 22 114 5l11 17" stroke-width="2.5"/><path d="M103.5 22v36M120.5 22v36" stroke-width="2.6"/><path d="M103.5 31h17M103.5 44h17" stroke-width="1.9"/><path d="M103.5 26 120.5 42M120.5 26 103.5 42" stroke-width="1.9"/><path d="M28 13h76M28 21h76" stroke-width="2.5"/><path d="M46 13v8M64 13v8M82 13v8M100 13v8" stroke-width="1.9"/><path d="M28 34h76M28 43h76" stroke-width="2.6"/><path d="M46 34v9M64 34v9M82 34v9M100 34v9" stroke-width="1.9"/><path d="M56 48h22L64 61" stroke-width="3.3"/><path d="M3 66.5c9-3.4 13 3.2 22 0s13-3.4 22 0 13 3.2 22 0 13-3.4 22 0 13 3.2 22 0 13-3.4 16 0" stroke-width="1.9"/></g></svg></span>
       <span class="brand__name">Street Ministry 7<span class="brand__sub">Pastor Jayson Van Beek</span></span>
     </a>
     <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="visually-hidden">Menu</span><span aria-hidden="true"></span></button>
@@ -46,21 +46,19 @@
 <main id="main">
 
   <section class="hero" id="top" aria-labelledby="hero-title">
-    <div class="wrap hero__layout">
-      <div class="hero__copy">
-        <p class="eyebrow reveal">Duluth · St. Paul, Minnesota</p>
-        <h1 id="hero-title" class="reveal">Street Ministry <span class="seven">7</span></h1>
-        <p class="tagline reveal">Pastor available 24 hours for emergency needs — children, women, we're here to help.</p>
-        <p class="lede reveal">Led by Pastor Jayson Van Beek. Meeting people where they are — on the street, in hiding, out of options — with the love of Jesus Christ, help with everyday needs until they're stable, and a safe bridge to the help that already exists.</p>
-        <div class="hero__actions reveal">
-          <a class="btn" href="#serve">Who we serve</a>
-          <a class="btn btn--ghost" href="#scripture">Read Isaiah 61</a>
-        </div>
+    <div class="hero__bg" data-parallax="0.05" aria-hidden="true">
+      <img src="assets/img/duluth-lift-bridge-1600.webp" srcset="assets/img/duluth-lift-bridge-800.webp 800w, assets/img/duluth-lift-bridge-1600.webp 1600w" sizes="(max-width: 800px) 92vw, 56vw" alt="" width="1600" height="1116" decoding="async" fetchpriority="high">
+    </div>
+    <div class="hero__shade" aria-hidden="true"></div>
+    <div class="wrap hero__copy">
+      <p class="eyebrow reveal">Duluth · St. Paul, Minnesota</p>
+      <h1 id="hero-title" class="reveal">Street Ministry <span class="seven">7</span></h1>
+      <p class="tagline reveal">Pastor available 24 hours for emergency needs — children, women, we're here to help.</p>
+      <p class="lede reveal">Led by Pastor Jayson Van Beek. Meeting people where they are — on the street, in hiding, out of options — with the love of Jesus Christ, help with everyday needs until they're stable, and a safe bridge to the help that already exists.</p>
+      <div class="hero__actions reveal">
+        <a class="btn" href="#serve">Who we serve</a>
+        <a class="btn btn--ghost" href="#scripture">Read Isaiah 61</a>
       </div>
-      <figure class="hero__photo">
-        <img src="assets/img/duluth-lift-bridge-1600.webp" srcset="assets/img/duluth-lift-bridge-800.webp 800w, assets/img/duluth-lift-bridge-1600.webp 1600w" sizes="(max-width: 900px) calc(100vw - 4.5rem), 26rem" alt="The entire Duluth Aerial Lift Bridge, with both towers, the top truss, and the deck spanning the ship canal" width="1600" height="1116" decoding="async" fetchpriority="high">
-        <figcaption>Duluth Aerial Lift Bridge · <a href="https://commons.wikimedia.org/wiki/File:Aerial_Lift_Bridge_centered.jpg" rel="noopener">McGhiever</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" rel="noopener">CC BY-SA 4.0</a></figcaption>
-      </figure>
     </div>
     <div class="hero__verse wrap reveal">
       <p>“The Spirit of the Lord GOD is upon me; because the LORD hath anointed me to preach good tidings unto the meek; he hath sent me to bind up the brokenhearted, to proclaim liberty to the captives…”</p>
