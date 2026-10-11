@@ -2,6 +2,14 @@
   "note": "All photos from Wikimedia Commons; graded to site palette (navy/black/gray/white) and resized. Modifications made.",
   "photos": [
     {
+      "key": "duluth-lift-bridge",
+      "title": "Aerial Lift Bridge centered.jpg",
+      "author": "McGhiever",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Aerial_Lift_Bridge_centered.jpg"
+    },
+    {
       "key": "duluth-bridge-night",
       "title": "Duluth Aerial Lift Bridge at night wide angle 1990973712 o.jpg",
       "author": "Tony Webster",

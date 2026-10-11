@@ -7,8 +7,8 @@ from PIL import Image, ImageOps
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 credits=json.load(open('assets-src/credits.json'))
-# tritone: black -> deep navy -> cool gray -> white
-stops=[(0,(5,8,16)),(0.38,(15,31,61)),(0.72,(120,132,152)),(1,(244,246,250))]
+# light tritone: navy steel, cool gray, near-white sky
+stops=[(0,(30,48,78)),(0.42,(88,116,154)),(0.74,(186,200,216)),(1,(248,250,252))]
 def lut():
     out=[[],[],[]]
     for i in range(256):
