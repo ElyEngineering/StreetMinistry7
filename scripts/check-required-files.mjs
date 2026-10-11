@@ -8,6 +8,7 @@ const required = [
   'credits.template.html',
   'assets/jayson.jpg',
   'assets-src/raw/duluth-bridge-night.jpg',
+  'assets-src/raw/duluth-lift-bridge.jpg',
   'assets-src/raw/lake-superior-dawn.jpg',
   'assets-src/raw/lake-superior-winter.jpg',
   'assets-src/raw/duluth-pier-light.jpg',
