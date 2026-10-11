@@ -23,9 +23,13 @@ def grade(im):
     g=ImageOps.autocontrast(im.convert('L'),cutoff=1)
     return Image.merge('RGB',[g.point(L[k]) for k in range(3)])
 os.makedirs('assets/img',exist_ok=True)
+# Landing bridge stays the original color. Every other photo is still graded.
+NATURAL={'duluth-lift-bridge'}
 for p in credits['photos']:
     src=f"assets-src/raw/{p['key']}.jpg"
-    im=grade(Image.open(src).convert('RGB'))
+    im=Image.open(src).convert('RGB')
+    if p['key'] not in NATURAL:
+        im=grade(im)
     for w in (800,1600):
         r=im.copy(); r.thumbnail((w,w*2)); r.save(f"assets/img/{p['key']}-{w}.webp",'WEBP',quality=74,method=6)
 # portrait: natural color, gentle crop, webp + jpg
